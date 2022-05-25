@@ -1,12 +1,23 @@
-#include<iostream>
+#include <SFML/System.hpp>
+#include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
-#include <random>
+#include <SFML/Audio.hpp>
+#include <SFML/Network.hpp>
+#include<random>
+#include<iostream>
+#include <SFML/Window/Touch.hpp>
 
-
-int main()
+int main(int argc, char *argv[])
 {
-	int x=100,y=100;//size of img
-	sf::RenderWindow win(sf::VideoMode(300,300),"rand img");
+
+	 sf::VideoMode screen(sf::VideoMode::getDesktopMode());
+
+    sf::RenderWindow win(screen, "");
+    win.setFramerateLimit(30);
+
+
+	int x=10,y=10;//size of img
+	
 
 	///random number for each pixl (color)
 	std::random_device d;
@@ -30,7 +41,7 @@ int main()
 	tex.loadFromImage(img);
 
 	//////set tex to  rect.
-	sf::RectangleShape block(sf::Vector2f(300,300));
+	sf::RectangleShape block(sf::Vector2f(screen.width,screen.height));
 	block.setTexture(&tex);
 
 
