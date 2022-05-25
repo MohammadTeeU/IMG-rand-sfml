@@ -53,5 +53,10 @@ for android:
  7. you will see app install on your phone
 
 
- 
+
+ ## works app
+ <img width=200 src="https://github.com/MohammadTeeU/IMG-rand-sfml/blob/master/screenshoot/1.png"/>
+<hr>
+ <img width=200 src="https://github.com/MohammadTeeU/IMG-rand-sfml/blob/master/screenshoot/2.png"/>
+<hr>
 
